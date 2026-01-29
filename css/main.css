@@ -15,7 +15,6 @@
 body {
   background-color: var(--embark-sand);
   font-family: var(--open-sans);
-  padding-top: 80px;
 }
 
 h1,
@@ -97,6 +96,8 @@ header nav {
   height: 400px;
   background-size: cover;
   background-position: center; 
+  background-color: red;
+
 }
 
 
