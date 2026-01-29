@@ -1,0 +1,770 @@
+/* ex.: var(--embark-green) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --embark-sand: #F8EEE1;
+  --embark-green: #88B29F;
+  --embark-dark-green: #6C8A82;
+  --embark-deep-green: #13795f;
+  --embark-fall: #f47d29;
+  --montserrat: "Montserrat";
+  --open-sans: "Open Sans";
+}
+
+body {
+  background-color: var(--embark-sand);
+  font-family: var(--open-sans);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--montserrat);
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: var(--open-sans);
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* ====================
+      top nav bar
+=======================*/
+header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--embark-deep-green);
+  z-index: 999;
+  padding: 0.5rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+/* for navigation buttons formatting */
+.nav-button {
+  color: white;
+  font-size: 0.7rem;
+  padding-left: 0.5rem;
+}
+
+/* for responsiveness of navigation buttons */
+.nav-button:hover,
+.nav-button:focus {
+  text-decoration: underline;
+  color: var(--embark-fall);
+}
+
+/* logo */
+.logo {
+  /*keeps logo size in check*/
+  width: 15%;
+  min-width: 5rem;
+  max-width: 13rem;
+  height: auto;
+}
+
+.logo:hover,
+.logo:focus {
+  opacity: 0.5;
+  transition: ease-out 0.3s;
+}
+
+/* ====================
+      main hero
+=======================*/
+
+.hero {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-hero {
+  /* change hero image for main page here */
+  background-image: url("../img/home_image.jpg");
+}
+
+.comm-hero {
+  /* change hero image for community1 page here */
+  background-image: url("../img/community_image.jpg");
+}
+
+.comm2-hero {
+  /* change hero image for community2 page here */
+  background-image: url("../img/community_image.jpg");
+}
+
+.know-hero {
+  /* change hero image for knowledge1 page here */
+  background-image: url("../img/knowledge_image.jpg");
+}
+
+.know2-hero {
+  /* change hero image for knowledge2 page here */
+  background-image: url("../img/knowledge_image.jpg");
+}
+
+.nature-hero {
+  /* change hero image for Nature page here */
+  background-image: url("../img/nature_image.jpg");
+}
+
+h1 {
+  position: relative;
+  top: 65%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.title-align-pre {
+  position: relative;
+}
+
+.title-align {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.nature-hero h1 {
+  top: 75%;
+}
+
+/*
+  11px - 0.7rem
+  14px - 0.9rem
+  24px - 1.5rem
+  32px - 2rem
+  40px - 2.5rem
+*/
+
+.title1 {
+  font-size: 1.5rem;
+  color: white;
+  padding-bottom: 0.5rem;
+}
+
+.title2 {
+  font-size: 2rem;
+  color: white;
+  padding-top: 0rem;
+}
+
+.title3 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.subtitle {
+  margin: 1rem 1rem 3rem;
+}
+
+p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+
+/* ====================
+      main content
+=======================*/
+
+.about,
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 1rem 0;
+}
+
+.about {
+  padding-bottom: 3rem;
+}
+
+.about-button:hover,
+.about-button:focus {
+  background-color: var(--embark-green);
+  transition: ease-in-out 0.2s;
+  color: white;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.explore-title {
+  padding-top: 6rem;
+  text-align: center;
+}
+
+.explore-subtitle {
+  text-align: center;
+  padding: 0 0 2rem;
+}
+
+.explore div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+
+.explore div h3 {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.explore div p {
+  text-align: center;
+}
+
+.explore img:hover,
+.explore img:focus {
+  opacity: 0.5;
+  transition: ease-out 0.3s;
+}
+
+.about h2,
+.contact h2 {
+  margin: 1rem 0;
+}
+
+.about-img-descrptn {
+  align-items: center;
+  text-align: center;
+}
+
+.desktop-about {
+  display: none;
+}
+
+.about-descrptn p {
+  text-align: justify;
+}
+
+.about button {
+  margin-top: 1rem;
+  background-color: transparent;
+  border: 0.5px gray solid;
+  padding: 0.5rem 2rem;
+  font-size: 0.9rem;
+}
+
+i {
+  margin: 0 0.3rem;
+}
+
+.contact-info div {
+  padding: 1rem 0;
+}
+
+.contact-info h3 {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.map {
+  width: 95vw;
+  height: 300px;
+}
+
+.explore-sections {
+  color: black;
+  margin-top: 1rem;
+}
+
+.explore-sections a:hover,
+.explore-sections a:focus {
+  color: var(--embark-deep-green);
+  text-decoration: underline;
+  transition: ease-out 0.3s;
+}
+
+/* ====================
+      Community 1
+=======================*/
+
+.comm-filter {
+  display: flex;
+  justify-content: center;
+}
+
+.comm-filter a {
+  color: black;
+  border: 0.5px black solid;
+  padding: 0.6rem 1rem;
+  font-size: 0.6rem;
+  margin: 1rem 0.5rem;
+  width: 50%;
+  text-align: center;
+}
+
+.comm-filter a:hover,
+.comm-filter a:focus {
+  color: var(--embark-fall)
+}
+
+.comm-filter .selected {
+  background-color: var(--embark-dark-green);
+  color: white;
+  text-decoration: underline;
+}
+
+/* ====================
+        Nature
+=======================*/
+
+.nature-winter h2,
+.nature-summer h2 {
+  font-family: var(--open-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1.5rem 0 0.5rem 1rem;
+}
+
+
+/* ====================
+      General
+=======================*/
+
+.image-settings {
+  width: 165px;
+  max-width: 16rem;
+  height: auto;
+  padding-top: 0.5rem;
+}
+
+details {
+  background-color: var(--embark-dark-green);
+  padding: 1rem;
+  color: white;
+}
+
+.up-triangle {
+  display: none;
+}
+
+details[open] .up-triangle {
+  display: block;
+}
+
+details[open] .down-triangle {
+  display: none;
+}
+
+.club-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  font-style: italic;
+  align-items: center;
+}
+
+.club-title {
+  font-size: 0.9rem;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+}
+
+.club-title span {
+  font-size: 0.7rem;
+}
+
+.club-dropdown:hover,
+.club-dropdown:focus {
+  color: rgb(247 217 138);
+}
+
+.hidden-descrptn {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden-descrptn p {
+  font-size: 0.7rem;
+  padding: 1rem 0;
+}
+
+.hidden-descrptn a {
+  font-size: 0.7rem;
+  background-color: white;
+  color: black;
+  padding: 0.5rem;
+  text-align: center;
+  width: 50%;
+}
+
+.learn-button:hover,
+.learn-button:focus {
+  color: white;
+  background-color: black;
+}
+
+/* ====================
+        footer
+=======================*/
+footer {
+  background-color: var(--embark-deep-green);
+  color: white;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+footer div>a {
+  color: white;
+  font-size: 0.7rem;
+}
+
+/* footer button hover & focus effect */
+.footer-button:hover,
+.footer-button:focus {
+  text-decoration: underline;
+  color: var(--embark-fall);
+}
+
+/* ====================
+        desktop
+=======================*/
+@media (min-width: 1034px) {
+
+  /*
+    11px - 0.7rem
+    14px - 0.9rem
+    20px = 1.2rem
+    24px - 1.5rem
+    32px - 2rem
+    36px - 2.2rem
+    40px - 2.5rem
+    96px - 5rem
+    128px - 7rem
+  */
+
+  header {
+    padding: 1rem 3rem;
+  }
+
+  .contact h3 {
+    font-family: var(--open-sans);
+    font-weight: 600;
+  }
+
+  .hero {
+    height: 760px;
+  }
+
+  .main-hero h1 {
+    top: 50%;
+  }
+
+  .comm-hero h1,
+  .comm2-hero h1 {
+    top: 70%;
+  }
+
+  .nature-hero h1 {
+    top: 60%;
+  }
+
+  .know-hero h1,
+  .know2-hero h1 {
+    top: 50%;
+  }
+
+  .title1 {
+    font-size: 5rem;
+  }
+
+  .title2 {
+    font-size: 6rem;
+  }
+
+  .title3 {
+    font-size: 7rem;
+  }
+
+  .nav-button {
+    font-size: 1rem;
+    padding-left: 2rem;
+  }
+
+  .subtitle {
+    margin: 2rem 1rem 5rem;
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .explore-title,
+  .about h2,
+  .contact h2 {
+    font-size: 2.5rem;
+  }
+
+  .explore-title {
+    padding-top: 9rem;
+  }
+
+  .explore-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .explore {
+    flex-direction: row;
+    align-items: start;
+    margin-top: 1rem;
+  }
+
+  .explore div {
+    margin: 0 0.5rem;
+    width: 33.3%;
+  }
+
+  .explore img {
+    height: 20rem;
+  }
+
+  .explore div h3 {
+    font-size: 1.8rem;
+  }
+
+  .about {
+    padding-top: 9rem;
+  }
+
+  .about-img-descrptn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-img-descrptn img {
+    width: 50%;
+  }
+
+  .about-descrptn {
+    display: block;
+    padding: 1rem;
+    text-align: justify;
+  }
+
+  .mobile-about {
+    display: none;
+  }
+
+  .desktop-about {
+    display: block;
+    text-align: left;
+  }
+
+  .contact {
+    padding-bottom: 6rem;
+    padding-top: 9rem;
+  }
+
+  .contact h3 {
+    font-size: 2rem;
+  }
+
+  #contact-horiz {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .contact-info {
+    width: 50%;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .contact-info div {
+    padding: 0.5rem 0;
+  }
+
+  .contact-info p {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer p {
+    font-size: 1.2rem;
+  }
+
+  footer div>a {
+    padding-left: 1rem;
+    font-size: 1rem;
+  }
+
+  .comm-filter {
+    display: flex;
+    justify-content: center;
+  }
+
+  .comm-filter a {
+    font-weight: 600;
+    color: black;
+    border: 0.5px black solid;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin: 1.5rem 0.5rem;
+    width: 30%;
+    text-align: center;
+  }
+
+  .comm-filter .selected {
+    background-color: var(--embark-dark-green);
+    color: white;
+    text-decoration: underline;
+  }
+
+  .nature-winter h2,
+  .nature-summer h2 {
+    font-family: var(--open-sans);
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 1.5rem 0 0.5rem 1rem;
+  }
+
+  details {
+    background-color: var(--embark-dark-green);
+    padding: 2rem;
+    color: white;
+  }
+
+  .club-title {
+    font-size: 2rem;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+  }
+
+  .club-title span {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+
+  .hidden-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 3rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .image-settings {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .hidden-descrptn {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hidden-descrptn p {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+
+  .hidden-descrptn a {
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    text-align: center;
+    width: 50%;
+  }
+
+  .logo {
+    width: 50%;
+    height: auto;
+  }
+
+  .map {
+    width: 50%;
+    height: 450px;
+  }
+
+}
+
+
+@media (min-width: 1606px) {
+  .about-img-descrptn {
+    justify-content: center;
+  }
+
+  .about-img-descrptn img {
+    width: 40%;
+    margin: 2rem;
+  }
+
+  .about-descrptn {
+    width: 40%
+  }
+
+  .contact-info {
+    justify-content: center;
+  }
+
+  .contact-info div {
+    padding: 3rem 0;
+  }
+
+  .contact-info p {
+    padding: 0;
+  }
+}

@@ -1,0 +1,9 @@
+/* *{
+  box-sizing: border-box;
+} */
+
+.grid{
+  display: grid;
+}
+
+/* @media (min-width: 60rem) */
