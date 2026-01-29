@@ -15,6 +15,7 @@
 body {
   background-color: var(--embark-sand);
   font-family: var(--open-sans);
+  padding-top: 80px;
 }
 
 h1,
@@ -95,12 +96,13 @@ header nav {
 .hero {
   height: 400px;
   background-size: cover;
-  background-position: center;
+  background-position: center; 
 }
+
 
 .main-hero {
   /* change hero image for main page here */
-  background-image: url("../home_image.jpg");
+  background-image: url("../img/home_image.jpg");
 }
 
 .comm-hero {
