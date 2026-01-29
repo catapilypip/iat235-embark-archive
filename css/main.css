@@ -96,39 +96,38 @@ header nav {
   height: 400px;
   background-size: cover;
   background-position: center; 
-  background-color: red;
 
 }
 
 
 .main-hero {
   /* change hero image for main page here */
-  background-image: url("../img/home_image.jpg");
+  background-image: url("images/home_image.jpg");
 }
 
 .comm-hero {
   /* change hero image for community1 page here */
-  background-image: url("../img/community_image.jpg");
+  background-image: url("images/community_image.jpg");
 }
 
 .comm2-hero {
   /* change hero image for community2 page here */
-  background-image: url("../img/community_image.jpg");
+  background-image: url("images/community_image.jpg");
 }
 
 .know-hero {
   /* change hero image for knowledge1 page here */
-  background-image: url("../img/knowledge_image.jpg");
+  background-image: url("images/knowledge_image.jpg");
 }
 
 .know2-hero {
   /* change hero image for knowledge2 page here */
-  background-image: url("../img/knowledge_image.jpg");
+  background-image: url("images/knowledge_image.jpg");
 }
 
 .nature-hero {
   /* change hero image for Nature page here */
-  background-image: url("../img/nature_image.jpg");
+  background-image: url("images/nature_image.jpg");
 }
 
 h1 {
