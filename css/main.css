@@ -100,7 +100,7 @@ header nav {
 
 .main-hero {
   /* change hero image for main page here */
-  background-image: url("../img/home_image.jpg");
+  background-image: url("img/home_image.jpg");
 }
 
 .comm-hero {
